@@ -15,6 +15,6 @@ for(let oneNumber of numbers) {
     else {
         ordinalEnding ="th"
     }
-    console.log(`${oneNumber}${ordinalEnding}`)
-}
+    console.log(`${oneNumber}${ordinalEnding}`);
+};
 

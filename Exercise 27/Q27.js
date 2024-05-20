@@ -1,5 +1,6 @@
+"use strict";
 //Exercise 27
-var alienColor = "Green";
+let alienColor = "Green";
 //Version 1
 if (alienColor == "Green") {
     console.log("You shot down green alien so You have earned 5 points");
@@ -11,7 +12,7 @@ else if (alienColor == "Red") {
     console.log("You shot down Red alien so You have earned 15 points");
 }
 //Version 2
-var alienColor1 = "Yellow";
+let alienColor1 = "Yellow";
 if (alienColor1 == "Green") {
     console.log("You shot down green alien so You have earned 5 points");
 }
@@ -22,7 +23,7 @@ else if (alienColor1 == "Red") {
     console.log("You shot down Red alien so You have earned 15 points");
 }
 //Version 3
-var alienColor2 = "Red";
+let alienColor2 = "Red";
 if (alienColor2 == "Green") {
     console.log("You shot down green alien so You have earned 5 points");
 }

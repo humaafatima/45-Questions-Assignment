@@ -1,3 +1,7 @@
-var rivers = ["Indus", "Amazon", "Chinab", "Yangste", "Kabul", "Yellow"];
+"use strict";
+//Exercise 20
+//Making an array of famous rivers in the world
+let rivers = ["Indus", "Amazon", "Chinab", "Yangste", "Kabul", "Yellow"];
+//Printing the rivers in list form
 console.log("List of the famous rivers in the world:");
-rivers.forEach(function (rivers1) { return console.log(rivers1); });
+rivers.forEach(rivers1 => console.log(rivers1));

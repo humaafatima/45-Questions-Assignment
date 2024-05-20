@@ -1,7 +1,7 @@
 //Exercise 32
-let current_users = ["Ali", "Anila", "talha", "Nida", "Rabiya"];
+let current_users: string [] = ["Ali", "Anila", "TALHA", "Nida", "Rabiya"];
 
-let new_users = ["Shan", "Inaya", "Naila", "Nida", "Talha"];
+let new_users: string [] = ["Shan", "Inaya", "Naila", "NIDa", "Talha"];
 
 new_users.forEach(checkNewUser => {
     let our_condition = (current_users.some(currentAlreadyUser => currentAlreadyUser.toLowerCase() === checkNewUser.toLowerCase())) 
@@ -11,5 +11,5 @@ new_users.forEach(checkNewUser => {
     else {
         console.log(`This Username ${checkNewUser} is available`);
     }
-})
+});
 

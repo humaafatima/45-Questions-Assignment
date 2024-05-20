@@ -1,11 +1,13 @@
-var current_users = ["Ali", "Anila", "talha", "Nida", "Rabiya"];
-var new_users = ["Shan", "Inaya", "Naila", "Nida", "Talha"];
-new_users.forEach(function (checkNewUser) {
-    var our_condition = (current_users.some(function (currentAlreadyUser) { return currentAlreadyUser.toLowerCase() === checkNewUser.toLowerCase(); }));
+"use strict";
+//Exercise 32
+let current_users = ["Ali", "Anila", "TALHA", "Nida", "Rabiya"];
+let new_users = ["Shan", "Inaya", "Naila", "NIDa", "Talha"];
+new_users.forEach(checkNewUser => {
+    let our_condition = (current_users.some(currentAlreadyUser => currentAlreadyUser.toLowerCase() === checkNewUser.toLowerCase()));
     if (our_condition) {
-        console.log("sorry ".concat(checkNewUser, " is already taken"));
+        console.log(`sorry ${checkNewUser} is already taken`);
     }
     else {
-        console.log("This Username ".concat(checkNewUser, " is available"));
+        console.log(`This Username ${checkNewUser} is available`);
     }
 });

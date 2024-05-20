@@ -8,5 +8,5 @@ userNames.forEach(oneUser => {
 }
 
 else {
-    console.log(`Hello ${oneUser}, thanks for logging in again`);
-}})
+    console.log(`Hello ${oneUser}, thanks for logging in again.`);
+}});

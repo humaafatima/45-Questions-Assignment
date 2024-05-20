@@ -1,15 +1,18 @@
-//First Version
-var alienColor = "Yellow";
-if (alienColor == "Yellow") {
-    console.log("You earned five points for shooting the alien");
+"use strict";
+//Exercise 26
+//Version to run if block
+let alienColour = "green";
+if (alienColour == 'green') {
+    console.log("The player earned 5 points only");
 }
 else {
-    console.log("You have earned 10 points");
+    console.log("The player earned 10 points");
 }
-//Second Version
-if (alienColor == "Pink") {
-    console.log("You earned five points for shooting the alien");
+//Another version to run else block
+let alienColour1 = "yellow";
+if (alienColour1 == 'green') {
+    console.log("The player earned 5 points");
 }
 else {
-    console.log("You have earned 10 points");
+    console.log("The player earned 10 points");
 }

@@ -1,5 +1,5 @@
 //Exercise 35
-let greatPets = ["Cat", "Dog", "Parrot"]
+let greatPets: string [] = ["Cat", "Dog", "Parrot"];
 
 for (let onePet of greatPets) {
 console.log(`${onePet} will make a great pet.`);

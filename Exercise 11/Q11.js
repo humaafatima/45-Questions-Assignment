@@ -1,3 +1,4 @@
+"use strict";
 //Exercise11
-var names = ["Samreen", "Jamila", "Almas", "Sobia", "Nadia"];
-names.forEach(function (friendname) { return console.log(friendname); });
+let names = ["Samreen", "Jamila", "Almas", "Sobia", "Nadia"];
+names.forEach(friendname => console.log(friendname));

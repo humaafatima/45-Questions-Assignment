@@ -1,7 +1,8 @@
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
-    var oneNumber = numbers_1[_i];
-    var ordinalEnding = void 0;
+"use strict";
+//Exercise 33
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let oneNumber of numbers) {
+    let ordinalEnding;
     if (oneNumber === 1) {
         ordinalEnding = "st";
     }
@@ -14,5 +15,6 @@ for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
     else {
         ordinalEnding = "th";
     }
-    console.log("".concat(oneNumber).concat(ordinalEnding));
+    console.log(`${oneNumber}${ordinalEnding}`);
 }
+;

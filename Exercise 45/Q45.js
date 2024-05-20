@@ -1,21 +1,18 @@
+"use strict";
 //Defining a function with car object in it
-function create_car(manufacturer, model) {
-    var options = [];
-    for (var _i = 2; _i < arguments.length; _i++) {
-        options[_i - 2] = arguments[_i];
-    }
+function create_car(manufacturer, model, ...options) {
     //Initialize a car object with manufacturer and model
-    var car = {
+    let car = {
         manufacturer: manufacturer,
         model: model
     };
     //Add additional options to the car object
-    options.forEach(function (option) {
-        var _a = option.split(":"), key = _a[0], value = _a[1];
+    options.forEach(option => {
+        let [key, value] = option.split(":");
         car[key.trim()] = value.trim();
     });
     return car;
 }
 //Call the function to create a car object
-var my_car = create_car("Toyota", "Corolla", "color: Black", "Sunroof: True");
+let my_car = create_car("Toyota", "Corolla", "color: Black", "Sunroof: True");
 console.log(my_car);

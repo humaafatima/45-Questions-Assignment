@@ -1,6 +1,7 @@
-function describe_city(city, country) {
-    if (country === void 0) { country = "Pakistan"; }
-    console.log("".concat(city, " is in ").concat(country));
+"use strict";
+//Exercise 38
+function describe_city(city, country = "Pakistan") {
+    console.log(`${city} is in ${country}.`);
 }
 //calling the function
 describe_city("Karachi");

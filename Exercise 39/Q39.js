@@ -1,7 +1,8 @@
+"use strict";
 //Exercise 39
 //creating a funtion which returns the value in a string
 function city_country(city, country) {
-    return "".concat(city, ", ").concat(country);
+    return `${city}, ${country}`;
 }
 //calling a function and printing the returned value
 console.log(city_country("Ottawa", "Canada"));
